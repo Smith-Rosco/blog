@@ -1,2 +1,2 @@
-https://gitee.com/rosco_k/hexo/2023/04/27/hello-world/
-https://gitee.com/rosco_k/hexo
+https://rosco_k.gitee.io/hexo/2023/04/27/hello-world/
+https://rosco_k.gitee.io/hexo

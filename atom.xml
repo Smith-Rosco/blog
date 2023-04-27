@@ -3,11 +3,11 @@
   <title>Hexo</title>
   
   
-  <link href="https://gitee.com/rosco_k/hexo/atom.xml" rel="self"/>
+  <link href="https://rosco_k.gitee.io/hexo/atom.xml" rel="self"/>
   
-  <link href="https://gitee.com/rosco_k/hexo/"/>
+  <link href="https://rosco_k.gitee.io/hexo/"/>
   <updated>2023-04-27T12:16:15.391Z</updated>
-  <id>https://gitee.com/rosco_k/hexo/</id>
+  <id>https://rosco_k.gitee.io/hexo/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://gitee.com/rosco_k/hexo/2023/04/27/hello-world/"/>
-    <id>https://gitee.com/rosco_k/hexo/2023/04/27/hello-world/</id>
+    <link href="https://rosco_k.gitee.io/hexo/2023/04/27/hello-world/"/>
+    <id>https://rosco_k.gitee.io/hexo/2023/04/27/hello-world/</id>
     <published>2023-04-27T12:16:15.391Z</published>
     <updated>2023-04-27T12:16:15.391Z</updated>
     
