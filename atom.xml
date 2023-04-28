@@ -3,11 +3,11 @@
   <title>Rosco&#39;s Blog</title>
   
   <subtitle>Welcome To my website.</subtitle>
-  <link href="https://rosco_k.gitee.io/my_webfile/atom.xml" rel="self"/>
+  <link href="https://rosco_k.gitee.io/blog/atom.xml" rel="self"/>
   
-  <link href="https://rosco_k.gitee.io/my_webfile/"/>
+  <link href="https://rosco_k.gitee.io/blog/"/>
   <updated>2023-04-28T09:35:38.864Z</updated>
-  <id>https://rosco_k.gitee.io/my_webfile/</id>
+  <id>https://rosco_k.gitee.io/blog/</id>
   
   <author>
     <name>Rosco</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>搭建个人博客（通过hexo和gitee)</title>
-    <link href="https://rosco_k.gitee.io/my_webfile/2023-04-27-fba32f97.html"/>
-    <id>https://rosco_k.gitee.io/my_webfile/2023-04-27-fba32f97.html</id>
+    <link href="https://rosco_k.gitee.io/blog/2023-04-27-fba32f97.html"/>
+    <id>https://rosco_k.gitee.io/blog/2023-04-27-fba32f97.html</id>
     <published>2023-04-27T13:44:23.000Z</published>
     <updated>2023-04-28T09:35:38.864Z</updated>
     
@@ -34,14 +34,14 @@
     
     
     
-    <category term="网页制作" scheme="https://rosco_k.gitee.io/my_webfile/tags/%E7%BD%91%E9%A1%B5%E5%88%B6%E4%BD%9C/"/>
+    <category term="网页制作" scheme="https://rosco_k.gitee.io/blog/tags/%E7%BD%91%E9%A1%B5%E5%88%B6%E4%BD%9C/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://rosco_k.gitee.io/my_webfile/2023-04-27-4a17b156.html"/>
-    <id>https://rosco_k.gitee.io/my_webfile/2023-04-27-4a17b156.html</id>
+    <link href="https://rosco_k.gitee.io/blog/2023-04-27-4a17b156.html"/>
+    <id>https://rosco_k.gitee.io/blog/2023-04-27-4a17b156.html</id>
     <published>2023-04-27T12:16:15.391Z</published>
     <updated>2023-04-28T08:53:59.816Z</updated>
     
