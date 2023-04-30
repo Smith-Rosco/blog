@@ -6,7 +6,7 @@
   <link href="https://rosco_k.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://rosco_k.gitee.io/blog/"/>
-  <updated>2023-04-30T14:24:52.325Z</updated>
+  <updated>2023-04-30T15:56:52.758Z</updated>
   <id>https://rosco_k.gitee.io/blog/</id>
   
   <author>
@@ -17,33 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>new</title>
-    <link href="https://rosco_k.gitee.io/blog/2023-04-30-6be34445.html"/>
-    <id>https://rosco_k.gitee.io/blog/2023-04-30-6be34445.html</id>
-    <published>2023-04-30T14:24:24.000Z</published>
-    <updated>2023-04-30T14:24:52.325Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\blog\assets\css\APlayer.min.css"><script src="\blog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;blog&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;blog&#92;assets&#92;js&#92;APlayer.m</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>搭建个人博客（二）美化篇</title>
     <link href="https://rosco_k.gitee.io/blog/2023-04-30-ba20a606.html"/>
     <id>https://rosco_k.gitee.io/blog/2023-04-30-ba20a606.html</id>
     <published>2023-04-30T14:17:56.000Z</published>
-    <updated>2023-04-30T15:32:24.156Z</updated>
+    <updated>2023-04-30T15:56:52.758Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\blog\assets\css\APlayer.min.css"><script src="\blog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h1><div class="note inf flat"><p>你可以去<a href="https://hexo.io/themes/">官网</a>选择各种主题，我选的是<code>butterfly</code></p></div><blockquote><p><a href="https://butterfly.js.org/">https://butterfly.js.org/</a></p></blockquote><ul><li><p>这是 butterfly 的官网，也是安装主题完成后的博客的样子，</p></li><li><p>打开官网右上角的<a href="https://butterfly.js.org/archives/page/2/">归档</a>页，你可以看到作者的所有文章</p></li><li><p>作者一共写了六篇教程，建议从第一篇文章开始： <a href="https://butterfly.js.org/posts/21cfbf15/#%E5%AE%89%E8%A3%9D">Butterfly 安装文档(一) 快速开始</a></p></li></ul><h1 id="建议-amp-注意事项"><a href="#建议-amp-注意事项" class="headerlink" title="建议 &amp; 注意事项"></a>建议 &amp; 注意事项</h1><div class="note warning flat"><p>安装完后的网页与作者的网页不同，这是因为很多功能是默认关闭的</p><p>详细配置在 </p><ul><li>Butterfly 安装文档(三) 主题配置 -1 </li><li>Butterfly 安装文档(四) 主题配置 -2</li></ul></div><h2 id="修改配置的正确姿势"><a href="#修改配置的正确姿势" class="headerlink" title="修改配置的正确姿势"></a>修改配置的正确姿势</h2><ul><li>用 Vscode 打开配置文件<code>_config.ym</code> 和 <code>_config.yml</code>并打开<code>文件-&gt;自动保存</code></li><li>在你的博客文件夹下打开 Git Blash，依次输入以下代码</li></ul><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><ul><li>打开<a href="http://localhost:4000/blog/">localhot:4000</a></li></ul><p>做完上述步骤后，你可以实现修改配置的同时，网页自动刷新并呈现出相应的效果</p><blockquote><p>安装和配置时可能会遇到一些问题，下面给出我遇到的问题以及解决办法</p></blockquote><h2 id="修改配置文件-config-yml-或-config-yml后生成网页报错"><a href="#修改配置文件-config-yml-或-config-yml后生成网页报错" class="headerlink" title="修改配置文件_config.yml  或 _config.yml后生成网页报错"></a>修改配置文件<code>_config.yml </code> 或 <code>_config.yml</code>后生成网页报错</h2><p>对任何配置文件的修改都需要在冒号’:’+ 空格 &#96; blankspace’ 后面，一定不要忘了空格！！！</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\blog\assets\css\APlayer.min.css"><script src="\blog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h1><div class="note inf flat"><p>你可以去<a href="https://hexo.io/themes/">官网</a>选择各种主题，我选的是<code>butterfly</code></p></div><blockquote><p><a href="https://butterfly.js.org/">https://butterfly.js.org/</a></p></blockquote><ul><li><p>这是 butterfly 的官网，也是安装主题完成后的博客的样子，</p></li><li><p>打开官网右上角的<a href="https://butterfly.js.org/archives/page/2/">归档</a>页，你可以看到作者的所有文章</p></li><li><p>作者一共写了六篇教程，建议从第一篇文章开始： <a href="https://butterfly.js.org/posts/21cfbf15/#%E5%AE%89%E8%A3%9D">Butterfly 安装文档(一) 快速开始</a></p></li></ul><h1 id="建议-amp-注意事项"><a href="#建议-amp-注意事项" class="headerlink" title="建议 &amp; 注意事项"></a>建议 &amp; 注意事项</h1><div class="note warning flat"><p>安装完后的网页与作者的网页不同，这是因为很多功能是默认关闭的</p><p>详细配置在 </p><ul><li>Butterfly 安装文档(三) 主题配置 -1 </li><li>Butterfly 安装文档(四) 主题配置 -2</li></ul></div><h2 id="修改配置的正确姿势"><a href="#修改配置的正确姿势" class="headerlink" title="修改配置的正确姿势"></a>修改配置的正确姿势</h2><ul><li>用 Vscode 打开配置文件<code>_config.ym</code> 和 <code>_config.yml</code>并打开<code>文件-&gt;自动保存</code></li><li>在你的博客文件夹下打开 Git Blash，依次输入以下代码</li></ul><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><ul><li>打开<a href="http://localhost:4000/blog/">localhot:4000</a></li></ul><p>做完上述步骤后，你可以实现修改配置的同时，网页自动刷新并呈现出相应的效果</p><div class="note warning flat"><p>安装和配置时可能会遇到一些问题，下面给出我遇到的问题以及解决办法</p></div><h2 id="修改配置文件-config-yml-或-config-yml后生成网页报错"><a href="#修改配置文件-config-yml-或-config-yml后生成网页报错" class="headerlink" title="修改配置文件_config.yml  或 _config.yml后生成网页报错"></a>修改配置文件<code>_config.yml </code> 或 <code>_config.yml</code>后生成网页报错</h2><p>对任何配置文件的修改都需要在冒号’:’+ 空格 &#96; blankspace’ 后面，一定不要忘了空格！！！</p>]]></content>
     
     
       
