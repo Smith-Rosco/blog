@@ -19,10 +19,10 @@ social:
   fas fa-envelope: mailto:little_boy.he@qq.com || Email || '#4a7dbe'
 
 avatar:
-  img: /img/avatar_image/avatar_1.png
+  img: /img/avatar_image/avatar_1.webp
 
 default_top_img: https://files.catbox.moe/31jxo3.png
-index_img: /img/index_image/index_image_1.jpg
+index_img: /img/index_image/index_image_1.webp
 
 cover:
   default_cover:
@@ -118,3 +118,4 @@ activate_power_mode:
 
 canvas_nest:
   enable: true
+
