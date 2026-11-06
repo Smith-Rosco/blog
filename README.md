@@ -27,7 +27,8 @@ npm run deploy       # 等价 hexo generate + check + hexo deploy
 
 图片必须用站内路径：
 
-- 图片放进 `source/img/`，正文写 `/blog/img/xxx.png`
+- 图片放进 `source/img/`，正文写 `/blog/img/xxx.webp`
+- 优先用 **WebP**（仓里的头像/横幅/封面/头图已经全部转成 WebP）；PNG/JPG 只在动图（GIF）或必须无损时用
 - **不要**写 `E:/...`、`C:\...`、`file:///...` 这类本机路径 —— 线上全是碎图，`npm run check` 会拦下来
 
 ## 配置分两层
@@ -35,6 +36,13 @@ npm run deploy       # 等价 hexo generate + check + hexo deploy
 - `_config.yml`：站点级配置（标题、URL、permalink、部署、`updated_option`）
 - `_config.butterfly.yml`：主题本地覆盖（菜单、头像、封面、社交、页脚、各种开关）。Hexo 会把它合并到 `themes/butterfly/_config.yml` 之上
 - **主题目录保持上游原样**，不要再直接改 `themes/butterfly/_config.yml`；要覆盖什么就写进 `_config.butterfly.yml`
+
+## 性能设置
+
+- 图片：头像 320px、首页横幅 1280x720、封面 800px、文章头图 1600x900，全部 WebP。首页图片传输量已从约 1.3MB 降到 221KB
+- 懒加载：`lazyload.enable: true` + `native: true`（浏览器原生 `loading="lazy"`，不额外加载 JS）；首屏图片仍会立即加载
+- 已关闭三个纯装饰特效：`preloader`（全屏加载动画，自带 147KB GIF）、`canvas_nest`（背景粒子）、`activate_power_mode`（打字冒光/抖动）。想要氛围感时可以把对应 `enable` 改回 `true`，但会明显增加 CPU 和首屏等待
+- 想再压首页：把 `index_image_1.webp` 换成更小的横幅，或给文章加 `cover` 后减少默认封面的使用
 
 ## 主题说明（重要）
 

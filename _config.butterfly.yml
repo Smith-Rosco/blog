@@ -111,11 +111,16 @@ snackbar:
 instantpage: true
 
 preloader:
-  enable: true
+  enable: false
 
 activate_power_mode:
-  enable: true
+  enable: false
 
 canvas_nest:
+  enable: false
+
+lazyload:
   enable: true
+  native: true
+  field: site
 
