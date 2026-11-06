@@ -1,0 +1,120 @@
+# Butterfly 5.x 本地覆盖配置
+# Hexo 会把本文件合并到 themes/butterfly/_config.yml 之上，主题目录保持上游原样，升级时不用重贴。
+
+nav:
+  logo: /img/favicon.png
+
+menu:
+  主页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+
+code_blocks:
+  theme: pale night
+  height_limit: 240
+
+social:
+  fab fa-github: https://gitee.com/Rosco_K/blog || Github || '#24292e'
+  fas fa-envelope: mailto:little_boy.he@qq.com || Email || '#4a7dbe'
+
+avatar:
+  img: /img/avatar_image/avatar_1.png
+
+default_top_img: https://files.catbox.moe/31jxo3.png
+index_img: /img/index_image/index_image_1.jpg
+
+cover:
+  default_cover:
+    - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+
+error_img:
+  flink: /img/loding.gif
+
+index_layout: 1
+
+post_meta:
+  page:
+    date_type: both
+    date_format: relative
+    categories: true
+    tags: false
+    label: true
+
+subtitle:
+  enable: true
+  effect: true
+  source: false
+  sub:
+    - "千年后，锦城相吊，遇草堂翁"
+    - '山桃红花满上头，蜀江春水拍山流'
+    - '晓看红湿处，花重锦官城'
+    - "白帝城头春草生，白盐山下蜀江清"
+
+index_post_content:
+  method: 2
+  length: 500
+
+toc:
+  expand: true
+
+related_post:
+  date_type: updated
+
+footer:
+  owner:
+    enable: true
+    since: 2023
+  copyright:
+    enable: false
+  custom_text: 'welcome to my blog'
+
+aside:
+  card_author:
+    button:
+      enable: true
+      icon: fab fa-github
+      text: Follow Me On Gitee
+      link: https://gitee.com/Rosco_K
+  card_tags:
+    color: true
+  card_webinfo:
+    runtime_date: 2023-04-27
+
+translate:
+  enable: true
+
+share:
+  use: sharejs
+  sharejs:
+    sites: wechat,qq,weibo
+
+photofigcaption: true
+
+wordcount:
+  enable: true
+
+beautify:
+  enable: true
+  field: post
+  title_prefix_icon: '\f0c1'
+  title_prefix_icon_color: '#F47466'
+
+rightside_bottom: 135px
+
+pjax:
+  enable: true
+
+snackbar:
+  enable: true
+
+instantpage: true
+
+preloader:
+  enable: true
+
+activate_power_mode:
+  enable: true
+
+canvas_nest:
+  enable: true
