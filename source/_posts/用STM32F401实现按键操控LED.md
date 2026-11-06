@@ -2,13 +2,12 @@
 title: 用STM32F401实现按键操控LED
 abbrlink: 35db5886
 date: 2023-06-30 00:34:43
+updated: 2023-06-30 00:40:23
 tags: STM32
 cover:
 top_img:
 description: 检测按键单击、双击、长按，并实现相应功能
 ---
-
-
 
 # 功能要求
 
@@ -41,8 +40,6 @@ description: 检测按键单击、双击、长按，并实现相应功能
 HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);	// 点亮 LED
 ```
 
-
-
 ### 状态二
 
 使用延时函数达到闪烁的目的
@@ -56,8 +53,6 @@ HAL_Delay(1000 - counter_1);							  // 延迟，以满足周期为 1s
 
 其中 counter_1 为 LED 在 1s 内点亮的时间，以 1s 为周期闪烁。
 
-
-
 ### 状态三
 
 我采用的是软件 PWM 的方案（因为可以加分）
@@ -70,8 +65,6 @@ HAL_Delay(counter_2);									   // 延迟 1ms
 HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);	  // 熄灭 LED
 HAL_Delay(20 - counter_2);							        // 延迟，以满足周期为 20ms
 ```
-
-
 
 ## 按键检测
 
@@ -90,10 +83,6 @@ HAL_Delay(20 - counter_2);							        // 延迟，以满足周期为 20ms
 - PC13 选择为 GPIO_OUTPUT 模式，Pull-up, User Lable 改成 LED
 - PA0 选择位  GPIO_EXti0 模式（即外部触发模式），下降沿触发，Pull-up, User Lable 改成 KEy
 
-![1](E:/7.File/Stm32/2.HotPot/Funny_key/Attachment/1.png)
-
-![2](E:/7.File/Stm32/2.HotPot/Funny_key/Attachment/2.png)
-
 ## 配置定时器
 
 我选用的是 TIM1
@@ -102,14 +91,10 @@ HAL_Delay(20 - counter_2);							        // 延迟，以满足周期为 20ms
 - 计数周期为 1000 - 1
 - 自动重装为 Enbale
 
-![3](E:/7.File/Stm32/2.HotPot/Funny_key/Attachment/3.png)
-
 ## 配置 NVIC
 
 - 启用 EXIT line0 interrupt，并将其抢占优先级设置为1
 - 启用 定时器 1 的更新中断
-
-![3](E:/7.File/Stm32/2.HotPot/Funny_key/Attachment/4.png)
 
 ## 新建工程
 
@@ -117,15 +102,11 @@ HAL_Delay(20 - counter_2);							        // 延迟，以满足周期为 20ms
 - 工具链选择 Makefile
 - 点击 GENERATE CODE
 
-![5](E:/7.File/Stm32/2.HotPot/Funny_key/Attachment/5.png)
-
 ## 代码部分
 
 使用 VsCode 开发 STM32 要用到 EIDE 插件或者 PlatformIO 插件，这里用的是 EIDE，详细步骤参照这位 UP 的[视频](https://www.bilibili.com/video/BV1Zu4y1f72H/?spm_id_from=333.999.0.0)
 
 下载源代码，将对应的文件拖入相应的文件夹内，文件层级如下
-
-![6](E:/7.File/Stm32/2.HotPot/Funny_key/Attachment/6.png)
 
 修改 Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c 内的 HAL_GPIO_EXTI_IRQHandle 函数。
 
@@ -148,8 +129,6 @@ void HAL_GPIO_EXTI_IRQHandler(uint16_t GPIO_Pin)
   }
 }
 ```
-
-
 
 编译并下载即可
 
@@ -174,4 +153,3 @@ void HAL_GPIO_EXTI_IRQHandler(uint16_t GPIO_Pin)
 
 - 也许可以采用并行操作逻辑，但是我还不会。
 - FPGA 是并行操作的，如果转换到 FPGA 的平台，这个问题将会迎刃而解
-

@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "build": "hexo generate",
+    "check": "node tools/check-build.mjs",
     "clean": "hexo clean",
+    "predeploy": "hexo generate && node tools/check-build.mjs",
     "deploy": "hexo deploy",
     "server": "hexo server"
   },
@@ -14,8 +16,6 @@
   "dependencies": {
     "hexo": "^6.3.0",
     "hexo-abbrlink": "^2.2.1",
-    "hexo-browsersync": "^0.3.0",
-    "hexo-butterfly-artitalk": "^1.0.4",
     "hexo-butterfly-tag-plugins-plus": "^1.0.17",
     "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^2.0.0",
@@ -24,14 +24,10 @@
     "hexo-generator-index": "^3.0.0",
     "hexo-generator-sitemap": "^3.0.1",
     "hexo-generator-tag": "^2.0.0",
-    "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-jade": "^0.5.0",
     "hexo-renderer-kramed": "^0.1.4",
+    "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0",
-    "hexo-tag-aplayer": "^3.0.4",
-    "hexo-theme-landscape": "^0.0.3",
-    "hexo-wordcount": "^6.0.1",
-    "pjax": "^0.2.8"
+    "hexo-wordcount": "^6.0.1"
   }
 }

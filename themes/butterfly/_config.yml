@@ -13,11 +13,6 @@ menu:
    归档: /archives/ || fas fa-archive
    标签: /tags/ || fas fa-tags
    分类: /categories/ || fas fa-folder-open
-   媒体||fas fa-list||hide:
-     音乐: /music/ || fas fa-music
-     电影: /movies/ || fas fa-video
-   链接: /link/ || fas fa-link
-   关于: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -901,10 +896,8 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-     - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4046046_2n2swnrzhdh.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-      - <div class="aplayer no-destroy" data-id="7422861869" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-lrcType="-1"> </div>
     # - <script src="xxxx"></script>
 
 
@@ -924,7 +917,7 @@ CDN:
   third_party_provider: jsdelivr
 
   # Add version number to url, true or false
-  version: false
+  version: true
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
